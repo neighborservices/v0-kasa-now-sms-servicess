@@ -5,7 +5,6 @@ import { Badge } from "@/components/ui/badge"
 import {
   Check,
   Send,
-  Globe,
   Users,
   BarChart3,
   Clock,
@@ -14,9 +13,6 @@ import {
   ArrowRight,
   Star,
   TrendingUp,
-  Target,
-  Bot,
-  Languages,
 } from "lucide-react"
 
 export default function HomePage() {
@@ -70,19 +66,23 @@ export default function HomePage() {
               </p>
 
               <div className="flex flex-col items-start gap-4 sm:flex-row">
-                <Button
-                  size="lg"
-                  className="h-14 bg-[#FF8800] px-8 text-base font-semibold text-white hover:bg-[#FF7700]"
-                >
-                  Sign up for KasaNow
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="h-14 border-2 border-white bg-transparent px-8 text-base font-semibold text-white hover:bg-white/10"
-                >
-                  Start for Free
-                </Button>
+                <Link href="/waitlist">
+                  <Button
+                    size="lg"
+                    className="h-14 bg-[#FF8800] px-8 text-base font-semibold text-white hover:bg-[#FF7700]"
+                  >
+                    Sign up for KasaNow
+                  </Button>
+                </Link>
+                <Link href="/waitlist">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="h-14 border-2 border-white bg-transparent px-8 text-base font-semibold text-white hover:bg-white/10"
+                  >
+                    Start for Free
+                  </Button>
+                </Link>
               </div>
 
               <p className="mt-6 text-sm text-white/80">
@@ -271,7 +271,6 @@ export default function HomePage() {
         </section>
 
         {/* AI Section - Matching Ahrefs AI features */}
-        
 
         {/* Big Data Section - Matching Ahrefs */}
         <section className="bg-gray-50 py-20 md:py-32">
@@ -577,7 +576,7 @@ export default function HomePage() {
               <div className="group">
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-white/10">
                   <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-12.5c-2.49 0-4.5 2.01-4.5 4.5s2.01 4.5 4.5 4.5 4.5-2.01 4.5-4.5-2.01-4.5-4.5-4.5zm0 5.5c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z" />
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8zm0-12.5c-2.49 0-4.5 2.01-4.5 4.5s2.01 4.5 4.5 4.5 4.5-2.01 4.5-4.5-2.01-4.5-4.5-4.5zm0 5.5c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z" />
                   </svg>
                 </div>
                 <h3 className="mb-2 text-xl font-bold">Podcast</h3>
